@@ -1,0 +1,220 @@
+.backdrop {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/*.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
+}*/
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  background-color: $color-white;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px 40px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+.modal-button__close {
+  position: absolute;
+  display: flex;
+  width: $card-gap;
+  height: $card-gap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.modal-button__icon-close {
+  fill: $color-black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    fill: $color-accent;
+  }
+}
+
+.modal__title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  margin-top: 0;
+
+  color: $text-primary;
+}
+
+.modal-form {
+  display: block;
+  margin-bottom: 10px;
+}
+.modal-form__label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
+  color: $text-secondary;
+  margin-bottom: 4px;
+}
+.modal-form__contact {
+  position: relative;
+  cursor: pointer;
+
+  &:focus-within {
+    fill: $color-accent;
+  }
+}
+
+.modal-form__input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin: 0;
+  padding: 10px;
+  padding-left: $card-gap;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus-within {
+    outline: none;
+    border-color: $color-accent;
+  }
+}
+
+%modal-form textarea {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: $text-primary;
+
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check__box {
+  position: absolute;
+  margin-top: 0.2em;
+  width: 15px;
+  height: 15px;
+  border-radius: 0.05em;
+  background-color: $color-white;
+  box-shadow: 0 0 0 0.1em $text-primary;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .check__input:checked + & {
+    background-color: $color-accent;
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .check__input:focus + & {
+    box-shadow: 0 0 0 0.1em $color-accent;
+  }
+}
+
+.check__text {
+  padding-left: 24px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $text-secondary;
+}
+.check__text-option {
+  color: $color-accent;
+  text-decoration: underline;
+}
+
+.modal-button__send {
+  display: block;
+  min-width: 200px;
+  background-color: $color-accent;
+  color: $color-white;
+
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  padding: 10px 55px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}

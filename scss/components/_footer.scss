@@ -1,0 +1,135 @@
+.footer {
+  background: $color-dark-bg;
+  /*padding: 60px 0;*/
+}
+
+.footer .container {
+  /*display: flex;
+  align-items: baseline;*/
+}
+
+.footer__contacts {
+  /*margin-right: 70px;*/
+}
+
+.footer__logo {
+  /*display: block;
+  margin-bottom: 20px;*/
+  color: $color-white;
+}
+
+address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: $color-white;
+
+  /* margin-bottom: 9px;*/
+}
+.footer__list {
+  /*display: block;*/
+}
+
+.footer__item {
+  /*margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }*/
+}
+.footer__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff99;
+}
+.footer__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color-white;
+  /*margin-top: 0px;
+  margin-bottom: 20px;*/
+}
+.footer-social__list {
+  /*display: flex;*/
+}
+
+.footer-social__item {
+  /*display: flex;*/
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:nth-last-child(-n + 4) {
+    /*margin-right: 10px;*/
+  }
+}
+
+.footer-social__icon {
+  fill: $color-white;
+  border-radius: 50%;
+  /*height: 44px;
+  width: 44px;*/
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+.footer__form {
+  /*display: flex;*/
+}
+
+.footer__input {
+  /*width: 358px;*/
+  background-color: $color-dark-bg;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $color-white;
+  /*padding: 15px 16px;
+  margin: 0;*/
+
+  %footer__input {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-button {
+  /*display: flex;
+  align-items: center;
+  justify-content: space-around;*/
+
+  background-color: $color-accent;
+  /*min-width: 200px;*/
+
+  /*margin-left: 12px;
+  padding: 10px 29px;*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.footer-button__title {
+  color: $color-white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.footer-button__icon {
+  /*display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;*/
+  fill: $color-white;
+}

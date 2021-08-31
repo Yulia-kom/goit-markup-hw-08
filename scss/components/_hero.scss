@@ -1,0 +1,45 @@
+.hero {
+  /*max-width: 1600px;*/
+  padding: 200px 0;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $color-dark-bg;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    padding: 118px 0;
+  }
+}
+
+.hero_title {
+  /*width: 696px;*/
+  color: $color-white;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 0;
+  margin-bottom: $card-gap;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.6;
+  }
+}
