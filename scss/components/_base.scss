@@ -5,14 +5,13 @@ body {
 }
 
 section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 
-  @media screen and(max-width: 767px) {
-    padding-bottom: 60px;
+  @media screen and(min-width: 1200px) {
+    padding-bottom: 94px;
   }
 }
 .container {
-  /*width: 1200px;*/
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -102,16 +101,15 @@ ul {
 .title {
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.166;
   letter-spacing: 0.03em;
   text-align: center;
   color: $text-primary;
-  margin-top: 0;
-  margin-bottom: 50px;
+  /*margin-bottom: 30px;*/
 
-  @media screen and (max-width: 767px) {
-    font-size: 28px;
-    margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
   }
 }

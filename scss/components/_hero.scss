@@ -1,7 +1,7 @@
 .hero {
   /*max-width: 1600px;*/
-  padding: 200px 0;
-  height: 600px;
+  padding: 118px 0;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 
@@ -13,11 +13,9 @@
 
   text-align: center;
 
-  @media screen and (max-width: 767px) {
-    margin-left: auto;
-    margin-right: auto;
-    height: 400px;
-    padding: 118px 0;
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding: 200px 0;
   }
 }
 
