@@ -23,7 +23,7 @@
         <nav class="header__navbar">
           <a class="header__logo logo" href=".index.html"><span>Web</span>Studio</a>
 
-          <div class="large">
+        <!-- <div class="large"/div>-->
             <ul class="menu-navbar list">
               <li class="menu-navbar__item">
                 <a class="menu-navbar__link menu-navbar__link--current" href="./index.html">Студия</a>
@@ -55,13 +55,13 @@
                 </a>
               </li>
             </ul>
-          </div>
+          
 
-          <div class="small">
+         <!-- <div class="small">
             <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="menu-container">
               <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                 <use class="icon-menu" href="../images/icons.svg#icon-menu"></use>
-                <!-- <use class="icon-cross" href="../images/icons.svg#close-menu"></use> -->
+                <- <use class="icon-cross" href="../images/icons.svg#close-menu"></use> ->
               </svg>
             </button>
 
@@ -78,7 +78,7 @@
             </div>
           </div>
         </nav>
-      </div>
+      </div>-->
     </header>
 
     <main>
@@ -180,7 +180,9 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img src="images/team1-mobil.jpg" alt="Игорь Демьяненко" />
+                  <img srcset="./images/team1-desk.jpg 270w, ./images/team1-mobil.jpg 450w"
+                   src="images/team1-desk.jpg" 
+                   alt="Игорь Демьяненко" />
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Игорь Демьяненко</h3>
@@ -223,7 +225,9 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img src="images/team2-mobil.jpg" alt="Ольга Репина" />
+                  <img srcset="./images/team2-desk.jpg 270w, ./images/team2-mobil.jpg 450w"
+                  src="images/team2-desk.jpg" 
+                  alt="Ольга Репина" />
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Ольга Репина</h3>
@@ -266,7 +270,9 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img src="images/team3-mobil.jpg" alt="Николай Тарасов" />
+                  <img srcset="./images/team3-desk.jpg 270w, ./images/team3-mobil.jpg 450w"
+                  src="images/team3-desk.jpg" 
+                  alt="Николай Тарасов" />
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Николай Тарасов</h3>
@@ -309,7 +315,9 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img src="images/team4-mobil.jpg" alt="Михаил Ермаков" />
+                  <img srcset="./images/team4-desk.jpg 270w, ./images/team4-mobil.jpg 450w"
+                  src="images/team4-desk.jpg" 
+                  alt="Михаил Ермаков" />
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Михаил Ермаков</h3>
@@ -486,7 +494,7 @@
       <div class="modal">
         <button class="modal-button__close" data-modal-close>
           <svg class="modal-button__icon-close" width="11px" height="11px">
-            <use href="./images/icons.svg#close"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>

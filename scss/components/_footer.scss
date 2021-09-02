@@ -1,12 +1,18 @@
 .footer {
   background: $color-dark-bg;
   padding: 60px 0;
-  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer .container {
   display: flex;
-  flex-direction: column;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 
   @media screen and (min-width: 1200px) {
     align-items: baseline;
@@ -42,7 +48,10 @@ address {
 }
 .footer__list {
   display: block;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__item {
@@ -72,8 +81,11 @@ address {
 
 .footer-social__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social__item {
@@ -104,10 +116,14 @@ address {
     background-color: $color-accent;
   }
 }
+
 .footer__form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer__input {
@@ -128,6 +144,7 @@ address {
     margin: 0;
   }
 }
+
 .footer-button {
   display: flex;
   align-items: center;
@@ -159,6 +176,7 @@ address {
   letter-spacing: 0.06em;
   text-align: center;
 }
+
 .footer-button__icon {
   display: inline-block;
   width: 24px;

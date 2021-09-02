@@ -5,7 +5,9 @@ body {
 }
 
 section {
-  padding-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
 
   @media screen and(min-width: 1200px) {
     padding-bottom: 94px;
@@ -94,22 +96,29 @@ ul {
 }
 
 .list {
-  /* flex-direction: column;*/
   list-style: none;
   display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 .title {
   font-weight: 700;
   font-style: normal;
-  font-size: 28px;
   line-height: 1.166;
   letter-spacing: 0.03em;
   text-align: center;
   color: $text-primary;
-  /*margin-bottom: 30px;*/
+
+  @media screen and (max-width: 767px) {
+    /*margin-bottom: 30px;*/
+    font-size: 28px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     margin-bottom: 50px;
+    margin-top: 0;
   }
 }
