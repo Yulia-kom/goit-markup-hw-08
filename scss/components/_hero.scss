@@ -10,7 +10,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   text-align: center;
 
   @media screen and (min-width: 1200px) {
@@ -20,11 +19,12 @@
 }
 
 .hero_title {
-  /*width: 696px;*/
+  display: block;
+  width: 360px;
   color: $color-white;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.6;
   letter-spacing: 0.06em;
 
   text-transform: uppercase;
@@ -34,10 +34,9 @@
   margin-top: 0;
   margin-bottom: $card-gap;
 
-  @media screen and (max-width: 1199px) {
-    display: block;
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.6;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

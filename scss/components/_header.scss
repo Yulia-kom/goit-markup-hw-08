@@ -48,14 +48,21 @@
   /*margin-left: 50px;*/
 }
 .header__contacts {
-  /*display: flex;
-  margin-left: auto;*/
   align-items: center;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
-/*.header__item {
-  margin-left: 50px;
-}*/
+
+.header__item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
+}
+
 .header__link {
   color: inherit;
   font-size: 14px;
@@ -69,10 +76,13 @@
     color: $color-accent;
   }
 }
-/*.header__icon {
-   margin-right: 10px;
-  fill: currentColor;
-}*/
+
+.header__icon {
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
 
 .menu-navbar__link {
   font-size: 14px;

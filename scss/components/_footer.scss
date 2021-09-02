@@ -14,6 +14,9 @@
 }
 
 .footer__contacts {
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -49,6 +52,7 @@ address {
     margin-bottom: 0;
   }
 }
+
 .footer__link {
   font-size: 14px;
   line-height: 1.71;
@@ -136,6 +140,10 @@ address {
   border-radius: 4px;
   border: none;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
     justify-content: space-around;
