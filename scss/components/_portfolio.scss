@@ -16,11 +16,14 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $card-gap;
+  }
 
   @media screen and (min-width: 1200px) {
-    align-items: center;
     margin-bottom: 56px;
-    justify-content: center;
   }
 }
 
@@ -67,7 +70,7 @@
 .portfolio-cards {
   list-style: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -81,10 +84,19 @@
       margin-bottom: 0;
     }
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-right: $card-gap;
+    flex-basis: calc((100% - 30px) / 2);
 
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 60px) / 3);
 
     &:nth-child(3n) {
