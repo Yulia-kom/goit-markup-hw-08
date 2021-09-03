@@ -39,23 +39,11 @@
   margin: 0;
   align-items: center;
   color: $text-primary;
-}
 
-/*.large {
-  display: none;
-}
-.small {
-  display: block;
-}
-
-@media screen and (min-width: 767px) {
-  .large {
-    display: block;
-  }
-  .small {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-}*/
+}
 
 .menu-navbar__item {
   display: block;
@@ -70,6 +58,10 @@
 .header__contacts {
   align-items: center;
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
