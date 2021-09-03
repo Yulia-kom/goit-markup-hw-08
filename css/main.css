@@ -235,6 +235,12 @@ ul {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-navbar__item {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .menu-navbar__item {
     margin-left: 50px;
@@ -317,7 +323,6 @@ ul {
 }
 
 .hero {
-  /*max-width: 1600px;*/
   padding: 118px 0;
   height: 400px;
   margin-left: auto;
@@ -711,12 +716,6 @@ ul {
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .team-social__links {
-    margin-bottom: 24px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .team-social__links {
     display: -webkit-box;
@@ -777,7 +776,7 @@ ul {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients__list {
     list-style: none;
     -webkit-box-orient: horizontal;
@@ -800,7 +799,6 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -813,6 +811,12 @@ ul {
   border: solid 1px #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .clients__icon {
+    width: 210px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .clients__icon {
     width: 226px;
@@ -821,12 +825,6 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .clients__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 170px;
     margin-right: 30px;
   }
@@ -834,8 +832,6 @@ ul {
 
 @media screen and (max-width: 767px) {
   .clients__card {
-    margin-right: 30px;
-    margin-bottom: 30px;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
@@ -857,6 +853,13 @@ ul {
   }
   .clients__card:nth-last-child(-n + 3) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients__card {
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -914,6 +917,9 @@ ul {
 
 @media screen and (min-width: 768px) {
   .footer__contacts {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-right: 165px;
   }
 }
@@ -921,6 +927,18 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__contacts {
     margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1048,7 +1066,6 @@ address {
 }
 
 .footer__input {
-  width: 450px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1057,6 +1074,12 @@ address {
   color: #ffffff;
   padding: 15px 16px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__input {
+    max-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

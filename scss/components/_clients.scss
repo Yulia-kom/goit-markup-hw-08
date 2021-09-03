@@ -12,7 +12,7 @@
   align-items: center;
   display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     list-style: none;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,7 +25,6 @@
   justify-content: center;
   justify-items: center;
 
-  width: 210px;
   height: 92px;
   border: 1px solid $color-icon;
   border-radius: 4px;
@@ -36,12 +35,16 @@
   &:focus {
     border: solid 1px $color-accent;
   }
+
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 226px;
   }
+
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
     width: 170px;
     margin-right: 30px;
   }
@@ -49,19 +52,15 @@
 
 .clients__card {
   @media screen and (max-width: 767px) {
-    margin-right: $card-gap;
-    margin-bottom: 30px;
     flex-basis: calc((100% - 30px) / 2);
 
     &:nth-child(2n) {
       margin-right: 0;
     }
-
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
   }
-
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 3);
 
@@ -71,6 +70,10 @@
     &:nth-last-child(-n + 3) {
       margin-bottom: 0;
     }
+  }
+  @media screen and (max-width: 1199px) {
+    margin-right: $card-gap;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {

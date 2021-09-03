@@ -27,6 +27,9 @@
     margin-right: 70px;
   }
 }
+.footer__contact-subscribe {
+  @media screen and (min-width: 768px) { 
+}
 
 .footer__logo {
   display: block;
@@ -127,7 +130,6 @@ address {
 }
 
 .footer__input {
-  width: 450px;
   background-color: $color-dark-bg;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -138,6 +140,9 @@ address {
 
   %footer__input {
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
@@ -158,8 +163,6 @@ address {
   border: none;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap-reverse;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
