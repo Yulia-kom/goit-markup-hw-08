@@ -21,7 +21,7 @@
       <div class="container">
         <!--Navbar-->
         <nav class="header__navbar">
-          <a class="header__logo logo" href=".index.html"><span>Web</span>Studio</a>
+          <a class="header__logo logo" href="./index.html"><span>Web</span>Studio</a>
 
           <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -65,13 +65,13 @@
     </header>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-close js-close-menu">
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
           <use class="icon-cross" href="../images/icons.svg#close-menu"></use>
         </svg>
       </button>
 
-      <ul class="mobile-menu">
+      <ul class="mobile-menu__nav">
         <li class="mobile-menu__item">
           <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студия</a>
         </li>
@@ -80,6 +80,31 @@
         </li>
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--mail" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__social">
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__social-link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__social-link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__social-link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__social-link" href="#">LinkedIn</a>
         </li>
       </ul>
     </div>
@@ -151,36 +176,30 @@
           <h2 class="our-work__title title">Чем мы занимаемся</h2>
           <ul class="our-work__list">
             <li class="our-work__item">
-              <img
-                srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x"
-                src="images/work1.jpg"
-                alt="work1"
-                width="320"
-              />
+              <picture>
+                <source srcset="./images/work1.jpg, ./images/work1@2x.jpg" type="image/jpg" />
+                <img srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x" src="images/work1.jpg" alt="work1" />
+              </picture>
               <div class="our-work__overlay">
                 <p class="our-work__text">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="our-work__item">
-              <img
-                srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x"
-                src="images/work2.jpg"
-                alt="work2"
-                width="320"
-              />
+              <picture>
+                <source srcset="./images/work2.jpg, ./images/work2@2x.jpg" type="image/jpg" />
+                <img srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x" src="images/work2.jpg" alt="work2" />
+              </picture>
               <div class="our-work__overlay">
                 <p class="our-work__text">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="our-work__item">
-              <img
-                srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x"
-                src="images/work3.jpg"
-                alt="work3"
-                width="320"
-              />
+              <picture>
+                <source srcset="./images/work3.jpg, ./images/work3@2x.jpg" type="image/jpg" />
+                <img srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x" src="images/work3.jpg" alt="work3" />
+              </picture>
               <div class="our-work__overlay">
                 <p class="our-work__text">Дизайнерские решения</p>
               </div>
@@ -198,11 +217,14 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img
-                    srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
-                    src="images/team1.jpg"
-                    alt="Игорь Демьяненко"
-                  />
+                  <picture>
+                    <source srcset="./images/team1.jpg, ./images/team1@2x.jpg" type="image/jpg" />
+                    <img
+                      srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
+                      src="images/team1.jpg"
+                      alt="Игорь Демьяненко"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Игорь Демьяненко</h3>
@@ -245,11 +267,14 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img
-                    srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
-                    src="images/team2.jpg"
-                    alt="Ольга Репина"
-                  />
+                  <picture>
+                    <source srcset="./images/team2.jpg, ./images/team2@2x.jpg" type="image/jpg" />
+                    <img
+                      srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
+                      src="images/team2.jpg"
+                      alt="Ольга Репина"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Ольга Репина</h3>
@@ -292,11 +317,14 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img
-                    srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
-                    src="images/team3.jpg"
-                    alt="Николай Тарасов"
-                  />
+                  <picture>
+                    <source srcset="./images/team3.jpg, ./images/team3@2x.jpg" type="image/jpg" />
+                    <img
+                      srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
+                      src="images/team3.jpg"
+                      alt="Николай Тарасов"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Николай Тарасов</h3>
@@ -339,11 +367,14 @@
             <li class="team__item">
               <article class="team-card">
                 <div class="team-card__image">
-                  <img
-                    srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
-                    src="images/team4.jpg"
-                    alt="Михаил Ермаков"
-                  />
+                  <picture>
+                    <source srcset="./images/team4.jpg, ./images/team4@2x.jpg" type="image/jpg" />
+                    <img
+                      srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
+                      src="images/team4.jpg"
+                      alt="Михаил Ермаков"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__menu">
                   <h3 class="team-card__name">Михаил Ермаков</h3>
