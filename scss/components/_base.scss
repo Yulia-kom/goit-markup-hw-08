@@ -115,6 +115,8 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   color: $text-primary;
+  margin-top: 0;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 767px) {
     font-size: 28px;
@@ -126,6 +128,5 @@ ul {
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     margin-bottom: 50px;
-    margin-top: 0;
   }
 }

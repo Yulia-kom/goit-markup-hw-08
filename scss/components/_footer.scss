@@ -20,18 +20,18 @@
   @media screen and (min-width: 768px) {
     align-items: baseline;
 
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
 
 .footer__contacts {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin: 0 60px;
     text-align: center;
   }
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
 }
 
@@ -55,10 +55,6 @@ address {
 }
 .footer__list {
   display: block;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 
 .footer__item {
@@ -91,7 +87,6 @@ address {
 
   @media screen and (max-width: 767px) {
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -126,7 +121,7 @@ address {
 
 .footer__subscribe {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 60px;
+    margin-top: 60px;
     flex-basis: 100%;
     text-align: center;
   }

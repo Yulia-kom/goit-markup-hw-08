@@ -32,10 +32,11 @@
   }
   @media screen and (min-width: 1200px) {
     background-image: $linear-gradient, url("../images/hero-desktop.jpg");
-    width: 1200px;
+    max-width: 1600px;
+    width: 100%;
     height: 600px;
     padding: 200px 0;
-    background-size: 1200px 600px;
+    background-size: 1600px 600px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: $linear-gradient, url("../images/hero-desktop@2x.jpg");
